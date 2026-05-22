@@ -241,7 +241,7 @@ function MarkdownLine({ line }: { line: string }) {
   if (line.startsWith("```") || line === "```") return null;
   if (line.trim() === "") return <div style={{ height: "6px" }} />;
 
-  const renderInline = (text) => {
+  const renderInline = (text: string) => {
     const parts = text.split(/(\*\*.*?\*\*|`.*?`|←.*)/);
     return parts.map((p, i) => {
       if (p.startsWith("**") && p.endsWith("**")) return <strong key={i} style={{ color: "#0f0f0e", fontWeight: 600 }}>{p.slice(2, -2)}</strong>;
