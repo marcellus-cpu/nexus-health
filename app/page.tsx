@@ -204,7 +204,7 @@ const TAB_CONTENT = {
   pathology: PATHOLOGY_CONTENT,
 };
 
-function MarkdownLine({ line }) {
+function MarkdownLine({ line }: { line: string }) {
   if (line.startsWith("### ")) {
     return <h3 style={{ fontFamily: "'Geist', sans-serif", fontSize: "13px", fontWeight: 600, color: "#0f0f0e", margin: "20px 0 8px", letterSpacing: "0.02em", textTransform: "uppercase" }}>{line.slice(4)}</h3>;
   }
