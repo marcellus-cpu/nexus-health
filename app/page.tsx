@@ -109,4 +109,4 @@ export default function NexusHealth() {
                 </div>
               </div>
             </div>)}
-            {loading && <div style={{ display: "flex", alignItems: "center", gap: 10, opacity: 0.6 }}><div style={{ width: 30, height: 30, borderRadius: "50%", background: "#0f0f0e", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, color: "#fff", flexShrink: 0 }}>NX</div
+            {loading && <div style={{ display: "flex", alignItems: "center", gap: 10, opacity: 0.6 }}><div style={{ width: 30, height: 30, borderRadius: "50%", background: "#0f0f0e", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, color: "#fff", flexShrink: 0 }}>NX</div></div><div style={{ fontSize: 12, color: "#aaa9a4", fontStyle: "italic" }}>Nexus AI is thinking…</div></div>}
